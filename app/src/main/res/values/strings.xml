@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">Prime Numbers</string>
+    <!-- hardcoded strings for language selection
+        languages available:
+            0. english
+            1. buryad
+            2. spanish
+            3. amharic
+            4. kazakh
+            5. burmese
+            6. russian
+            7. vietnamese
+    -->
+
+    <!-- english -->
+    <string name="language">English</string>
+    <string name="toast">Language set to English</string>
+    <string name="definition">A prime number is a number
+                            greater than 1 that is divisible
+                            only by 1 and the number itself</string>
+    <string name="range_error">The starting position cannot be
+                            less than ending position</string>"
+    <string name="negative_error">The starting position must be positive</string>
+    <string name="text">Define the range:</string>
+    <string name="from">Start</string>
+    <string name="to">End</string>
+    <string name="output">Output</string>
+    <string name="calculate">Calculate prime numbers</string>
+    <string name="display">Numbers will be displayed here</string>
+    <string name="not_found">No prime numbers were found in given range: </string>
+    <string name="found">Prime numbers found in range <!--"10 - 1000"--></string>
+    <string name="copy">Copy to clipboard</string>
+    <string name="toast_clipboard">Copied to clipboard</string>
+
+    <!-- buryad -->
+    <string name="language_bxr">Буряад</string>
+    <string name="toast_bxr">Буряад руу шэлжэбэ</string>
+    <string name="definition_bxr">Юрэнхы тоо гээшэ 1-һээ ехэ,
+                            гансал 1-дэ хубаагдаха ба тоо өөрөө</string>
+    <string name="range_error_bxr">Эхинэй байра түгэсхэлэй байраһаа бага байжа болохогүй</string>"
+    <string name="negative_error_bxr">Эхинэй байра эерэг байха ёһотой</string>
+    <string name="text_bxr">Yргэлжэлэл тодорхойлхо:</string>
+    <string name="from_bxr">Эхилэл</string>
+    <string name="to_bxr">Түгэсхэл</string>
+    <string name="output_bxr">Гаралта</string>
+    <string name="calculate_bxr">Юрын тоонуудые тоолохо</string>
+    <string name="display_bxr">Тоонууд эндэ харуулагдаха</string>
+    <string name="not_found_bxr">Үгтэһэн үргэлжэлэл соо юрын тоонууд олдоогүй: </string>
+    <string name="found_bxr">Үргэлжэлэл соо олоһон юрын тоонууд <!-- "10 - 1000" --> </string>
+    <string name="copy_bxr">Буфертэ хуулбарилха</string>"
+    <string name="toast_clipboard_bxr">Буфертэ хуулагдаһан</string>
+
+    <!-- spanish -->
+    <string name="language_esp">Español</string>
+    <string name="toast_esp">Idioma cambiado a Español</string>
+    <string name="definition_esp">Un número primo es un número
+                            mayor que 1 que solo es divisible
+                            por 1 y por sí mismo</string>
+    <string name="range_error_esp">La posición inicial no puede ser
+                            menor que la posición final</string>
+    <string name="negative_error_esp">La posición inicial debe ser positiva</string>
+    <string name="text_esp">Define el rango:</string>
+    <string name="from_esp">Inicio</string>
+    <string name="to_esp">Fin</string>
+    <string name="output_esp">Salida</string>
+    <string name="calculate_esp">Calcular números primos</string>
+    <string name="display_esp">Los números se mostrarán aquí</string>
+    <string name="not_found_esp">No se encontraron números primos en el rango dado: </string>
+    <string name="found_esp">Números primos encontrados en el rango <!--"10 - 1000"--></string>
+    <string name="copy_esp">Copiar al portapapeles</string>
+    <string name="toast_clipboard_esp">Copiado al portapapeles</string>
+
+    <!-- amharic -->
+    <string name="language_et">አማርኛ</string>
+    <string name="toast_et">ቋንቋ ወደ አማርኛ ተሰየም</string>
+    <string name="definition_et">የተመረጠ ቁጥር ከ1 የበለጠ ሆኖ
+                            በ1 እና በራሱ ብቻ የሚከፈል ቁጥር ነው</string>
+    <string name="range_error_et">የመጀመሪያው ቦታ ከመጨረሻው ቦታ
+                            ያነሰ ሊሆን አይችልም</string>
+    <string name="negative_error_et">የመጀመሪያው ቦታ አዎንታዊ ሊሆን አለበት</string>
+    <string name="text_et">ክልሉን ይሰይሙ:</string>
+    <string name="from_et">መጀመሪያ</string>
+    <string name="to_et">መጨረሻ</string>
+    <string name="output_et">ውጤት</string>
+    <string name="calculate_et">የተመረጠ ቁጥር ይስላ</string>
+    <string name="display_et">ቁጥሮቹ እዚህ ይታያሉ</string>
+    <string name="not_found_et">በተሰየመው ክልል ምንም የተመረጠ ቁጥር አልተገኘም፡ </string>
+    <string name="found_et">በክልሉ የተገኙ የተመረጠ ቁጥሮች <!--"10 - 1000"--></string>
+    <string name="copy_et">ወደ ቅንጥብ ሰሌዳ ቅዳ</string>
+    <string name="toast_clipboard_et">ወደ ቅንጥብ ሰሌዳ ተቀድቷል</string>
+
+
+
+    <!-- kazakh -->
+    <string name="language_kz">Қазақша</string>
+    <string name="toast_kz">Тіл қазақ тіліне өзгертілді</string>
+    <string name="definition_kz">Жай сан – бұл тек 1-ге және өзіне ғана бөлінетін,
+                            1-ден үлкен сан</string>
+    <string name="range_error_kz">Бастапқы позиция аяқталу позициясынан
+                            кіші болмауы керек</string>
+    <string name="negative_error_kz">Бастапқы позиция оң сан болуы керек</string>
+    <string name="text_kz">Ауқымды анықтаңыз:</string>
+    <string name="from_kz">Бастау</string>
+    <string name="to_kz">Аяқтау</string>
+    <string name="output_kz">Шығару</string>
+    <string name="calculate_kz">Жай сандарды есептеу</string>
+    <string name="display_kz">Сандар осында көрсетіледі</string>
+    <string name="not_found_kz">Берілген диапазонда жай сандар табылған жоқ: </string>
+    <string name="found_kz">Диапазонда табылған жай сандар <!--"10 - 1000"--></string>
+    <string name="copy_kz">Буферге көшіру</string>
+    <string name="toast_clipboard_kz">Буферге көшірілді</string>
+
+    <!-- burmese -->
+    <string name="language_mm">မြန်မာ</string>
+    <string name="toast_mm">ဘာသာစကားကို မြန်မာသို့ ပြောင်းပြီးပါပြီ</string>
+    <string name="definition_mm">သင်္ချာဂဏန်းတစ်ခုသည် ၁ ထက်ကြီးပြီး
+                            ၁ နှင့် မိမိကိုယ်ကိုသာစားလို့ရသော ဂဏန်းဖြစ်သည်</string>
+    <string name="range_error_mm">အစရာနေရာသည် အဆုံးနေရာထက်
+                            ပိုငယ်၍မဖြစ်နိုင်ပါ</string>
+    <string name="negative_error_mm">အစရာနေရာသည် သုညထက်ကြီးရမည်</string>
+    <string name="text_mm">အပိုင်းအခြား သတ်မှတ်ပါ:</string>
+    <string name="from_mm">စတင်</string>
+    <string name="to_mm">အဆုံး</string>
+    <string name="output_mm">ရလာဒ်</string>
+    <string name="calculate_mm">သင်္ချာဂဏန်းများတွက်ချက်မည်</string>
+    <string name="display_mm">ဂဏန်းများကို ဤနေရာတွင် ပြသမည်</string>
+    <string name="not_found_mm">ပေးထားသော အပိုင်းအခြားတွင် သင်္ချာဂဏန်းများ ရှာမတွေ့ပါ: </string>
+    <string name="found_mm">ပေးထားသော အပိုင်းအခြားတွင် တွေ့ရှိသော သင်္ချာဂဏန်းများ <!--"10 - 1000"--></string>
+    <string name="copy_mm">ကလစ်ဘုတ်သို့ ကူးယူပါ။</string>"
+    <string name="toast_clipboard_mm">ကလစ်ဘုတ်သို့ ကူးယူထားသည်။</string>
+
+    <!-- russian -->
+    <string name="language_ru">Русский</string>
+    <string name="toast_ru">Язык изменен на Русский</string>
+    <string name="definition_ru">Простое число — это число,
+                            большее 1, которое делится
+                            только на 1 и само себя</string>
+    <string name="range_error_ru">Начальная позиция не может быть
+                            меньше конечной позиции</string>
+    <string name="negative_error_ru">Начальная позиция должна быть положительной</string>
+    <string name="text_ru">Определите диапазон:</string>
+    <string name="from_ru">Начало</string>
+    <string name="to_ru">Конец</string>
+    <string name="output_ru">Вывод</string>
+    <string name="calculate_ru">Вычислить простые числа</string>
+    <string name="display_ru">Числа будут отображены здесь</string>
+    <string name="not_found_ru">Простые числа в указанном диапазоне не найдены: </string>
+    <string name="found_ru">Найденные простые числа в диапазоне <!--"10 - 1000"--></string>
+    <string name="copy_ru">Скопировать в буфер обмена</string>
+    <string name="toast_clipboard_ru">Скопировано в буфер обмена</string>
+
+    <!-- Vietnamese -->
+    <string name="language_vn">Tiếng Việt</string>
+    <string name="toast_vn">Đã thay đổi ngôn ngữ thành Tiếng Việt</string>
+    <string name="definition_vn">Số nguyên tố là số lớn hơn 1
+                            và chỉ chia hết cho 1 và chính nó</string>
+    <string name="range_error_vn">Vị trí bắt đầu không thể nhỏ hơn
+                            vị trí kết thúc</string>
+    <string name="negative_error_vn">Vị trí bắt đầu phải là số dương</string>
+    <string name="text_vn">Xác định phạm vi:</string>
+    <string name="from_vn">Bắt đầu</string>
+    <string name="to_vn">Kết thúc</string>
+    <string name="output_vn">Kết quả</string>
+    <string name="calculate_vn">Tính số nguyên tố</string>
+    <string name="display_vn">Các số sẽ được hiển thị tại đây</string>
+    <string name="not_found_vn">Không tìm thấy số nguyên tố trong phạm vi đã cho: </string>
+    <string name="found_vn">Số nguyên tố được tìm thấy trong phạm vi <!--"10 - 1000"--></string>
+    <string name="copy_vn">Sao chép vào bộ nhớ đệm</string>"
+    <string name="toast_clipboard_vn">Đã sao chép vào bộ nhớ đệm</string>
+
+</resources>
