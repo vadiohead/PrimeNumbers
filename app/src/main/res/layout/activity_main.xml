@@ -23,6 +23,7 @@
         android:id="@+id/prime_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/spinner"
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
         app:layout_constraintStart_toStartOf="parent"
@@ -155,12 +156,11 @@
         </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Denominator Layout (Visibility Gone initially) -->
+    <!-- Divisor Layout (Visibility Gone initially) -->
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/denominator_layout"
+        android:id="@+id/divisor_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:visibility="gone"
         app:layout_constraintTop_toBottomOf="@id/spinner"
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
         app:layout_constraintStart_toStartOf="parent"
@@ -168,41 +168,54 @@
 
         <!-- Denominator Definition -->
         <TextView
-            android:id="@+id/denominator_definition"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/denominator_definition"
+            android:id="@+id/divisor_definition"
+            android:layout_width="329dp"
+            android:layout_height="67dp"
+            android:text="@string/divisor_definition"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
-        <!-- Number Input EditText -->
-        <EditText
-            android:id="@+id/number_input"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/enter_number"
-            android:inputType="number"
-            android:ems="10"
-            app:layout_constraintTop_toBottomOf="@id/denominator_definition"
-            app:layout_constraintStart_toStartOf="parent"/>
-
-        <!-- Calculate Denominators Button -->
-        <Button
-            android:id="@+id/calculate_denominators"
+        <!-- From TextView -->
+        <TextView
+            android:id="@+id/number_input_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/calculate_denominators"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/enter_number"
+            app:layout_constraintTop_toBottomOf="@id/divisor_definition"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- From Value EditText -->
+        <EditText
+            android:id="@+id/number_input"
+            android:layout_width="162dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="2"
+            app:layout_constraintTop_toTopOf="@id/number_input_text"
+            app:layout_constraintStart_toEndOf="@id/number_input_text"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="-20dp"/>
+
+        <!-- Calculate Divisors Button -->
+        <Button
+            android:id="@+id/calculate_divisors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate_divisors"
             app:layout_constraintTop_toBottomOf="@id/number_input"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
-        <!-- ScrollView for Denominator Results -->
+        <!-- ScrollView for Divisor Results -->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:background="@color/black"
-            app:layout_constraintTop_toBottomOf="@id/calculate_denominators"
+            app:layout_constraintTop_toBottomOf="@id/calculate_divisors"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
@@ -213,7 +226,7 @@
 
                 <!-- Numbers TextView -->
                 <TextView
-                    android:id="@+id/denominator_result"
+                    android:id="@+id/divisor_result"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"

@@ -33,10 +33,12 @@
     <string name="found">Prime numbers found in range <!--"10 - 1000"--></string>
     <string name="copy">Copy to clipboard</string>
     <string name="toast_clipboard">Copied to clipboard</string>
-    <string name="denominator_definition">A denominator is a number that divides another number evenly.</string>
+    <string name="divisor_definition">A divisor is a number that divides another number evenly</string>
     <string name="enter_number">Enter the number:</string>
-    <string name="calculate_denominators">Calculate denominators</string>
-    <string name="denominator_result">Denominators:</string>
+    <string name="calculate_divisors">Calculate divisors</string>
+    <string name="is_prime"> is a prime number</string>
+    <string name="is_not_prime"> is not a prime number</string>
+    <string name="divisors_result">Found divisors:</string>
 
     <!-- buryad -->
     <string name="language_bxr">Буряад</string>
@@ -55,6 +57,12 @@
     <string name="found_bxr">Үргэлжэлэл соо олоһон юрын тоонууд <!-- "10 - 1000" --> </string>
     <string name="copy_bxr">Буфертэ хуулбарилха</string>"
     <string name="toast_clipboard_bxr">Буфертэ хуулагдаһан</string>
+    <string name="denominator_definition_bxr">Хубаагша гээшэ ондоо тоое тэгшэ хубааха тоо юм</string>
+    <string name="enter_number_bxr">Тоо бэшэгты:</string>
+    <string name="calculate_divisors_bxr">Хубаагша тоолохо</string>
+    <string name="is_prime_bxr"> юрын тоо байна</string>
+    <string name="is_not_prime_bxr"> юрын тоо бэшэ</string>
+    <string name="divisors_result_bxr">Хубаагшадые олоһон байна:</string>
 
     <!-- spanish -->
     <string name="language_esp">Español</string>
@@ -75,6 +83,12 @@
     <string name="found_esp">Números primos encontrados en el rango <!--"10 - 1000"--></string>
     <string name="copy_esp">Copiar al portapapeles</string>
     <string name="toast_clipboard_esp">Copiado al portapapeles</string>
+    <string name="divisor_definition_esp">Un divisor es un número que divide a otro número de manera exacta</string>
+    <string name="enter_number_esp">Ingrese el número:</string>
+    <string name="calculate_divisors_esp">Calcular divisores</string>
+    <string name="is_prime_esp"> es un número primo</string>
+    <string name="is_not_prime_esp"> no es un número primo</string>
+    <string name="divisors_result_esp">Divisores encontrados:</string>
 
     <!-- amharic -->
     <string name="language_et">አማርኛ</string>
@@ -94,8 +108,12 @@
     <string name="found_et">በክልሉ የተገኙ የተመረጠ ቁጥሮች <!--"10 - 1000"--></string>
     <string name="copy_et">ወደ ቅንጥብ ሰሌዳ ቅዳ</string>
     <string name="toast_clipboard_et">ወደ ቅንጥብ ሰሌዳ ተቀድቷል</string>
-
-
+    <string name="divisor_definition_et">አንድ አንደኛ ቁጥር ሌላ ቁጥርን በትክክል ይከፍላል</string>
+    <string name="enter_number_et">ቁጥር ይግቡ:</string>
+    <string name="calculate_divisors_et">አንደኛ ቁጥሮችን ይቀመጡ</string>
+    <string name="is_prime_et"> ይህ የተመረጡ ቁጥር ነው</string>
+    <string name="is_not_prime_et"> ይህ የተመረጡ ቁጥር አይደለም</string>
+    <string name="divisors_result_et">የተገኙ አንደኛ ቁጥሮች:</string>
 
     <!-- kazakh -->
     <string name="language_kz">Қазақша</string>
@@ -115,6 +133,12 @@
     <string name="found_kz">Диапазонда табылған жай сандар <!--"10 - 1000"--></string>
     <string name="copy_kz">Буферге көшіру</string>
     <string name="toast_clipboard_kz">Буферге көшірілді</string>
+    <string name="divisor_definition_kz">Бөлгіш - бұл басқа санды дәл бөлетін сан</string>
+    <string name="enter_number_kz">Санды енгізіңіз:</string>
+    <string name="calculate_divisors_kz">Бөлгіштерді есептеу</string>
+    <string name="is_prime_kz"> бұл жай сан</string>
+    <string name="is_not_prime_kz"> бұл жай сан емес</string>
+    <string name="divisors_result_kz">Табылған бөлгіштер:</string>
 
     <!-- burmese -->
     <string name="language_mm">မြန်မာ</string>
@@ -134,6 +158,12 @@
     <string name="found_mm">ပေးထားသော အပိုင်းအခြားတွင် တွေ့ရှိသော သင်္ချာဂဏန်းများ <!--"10 - 1000"--></string>
     <string name="copy_mm">ကလစ်ဘုတ်သို့ ကူးယူပါ။</string>"
     <string name="toast_clipboard_mm">ကလစ်ဘုတ်သို့ ကူးယူထားသည်။</string>
+    <string name="divisor_definition_mm">တစ်ခုတည်းသောအရေအတွက်ကို တိကျစွာခွဲခြားနိုင်သောအရေအတွက်</string>
+    <string name="enter_number_mm">အရေအတွက်ထည့်ပါ:</string>
+    <string name="calculate_divisors_mm">ခွဲခြားသူများကိုတွက်ချက်ပါ</string>
+    <string name="is_prime_mm"> ဤသည်မှာပုဂ္ဂိုလ်ဆန်းအရေအတွက်ဖြစ်သည်</string>
+    <string name="is_not_prime_mm"> ဤသည်မှာပုဂ္ဂိုလ်ဆန်းအရေအတွက်မဟုတ်ပါ</string>
+    <string name="divisors_result_mm">တွေ့ရှိသောခွဲခြားသူများ:</string>
 
     <!-- russian -->
     <string name="language_ru">Русский</string>
@@ -154,6 +184,12 @@
     <string name="found_ru">Найденные простые числа в диапазоне <!--"10 - 1000"--></string>
     <string name="copy_ru">Скопировать в буфер обмена</string>
     <string name="toast_clipboard_ru">Скопировано в буфер обмена</string>
+    <string name="divisor_definition_ru">Делитель — это число, которое нацело делит другое число</string>
+    <string name="enter_number_ru">Введите число:</string>
+    <string name="calculate_divisors_ru">Вычислить делители</string>
+    <string name="is_prime_ru"> - простое число</string>
+    <string name="is_not_prime_ru"> - не простое число</string>
+    <string name="divisors_result_ru">Найденные делители:</string>
 
     <!-- Vietnamese -->
     <string name="language_vn">Tiếng Việt</string>
@@ -173,5 +209,11 @@
     <string name="found_vn">Số nguyên tố được tìm thấy trong phạm vi <!--"10 - 1000"--></string>
     <string name="copy_vn">Sao chép vào bộ nhớ đệm</string>"
     <string name="toast_clipboard_vn">Đã sao chép vào bộ nhớ đệm</string>
+    <string name="divisor_definition_vn">Một số chia một số khác một cách chính xác</string>
+    <string name="enter_number_vn">Nhập số:</string>
+    <string name="calculate_divisors_vn">Tính toán các số chia</string>
+    <string name="is_prime_vn"> là một số nguyên tố</string>
+    <string name="is_not_prime_vn"> không phải là một số nguyên tố</string>
+    <string name="divisors_result_vn">Các số chia được tìm thấy:</string>
 
 </resources>

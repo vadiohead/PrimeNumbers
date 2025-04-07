@@ -36,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
     String found;
     String copy;
     String toastClipboard;
+    String number_input_text;
+    String calculate_divisors;
+    String is_prime;
+    String is_not_prime;
+    String denominator_definition;
+    String divisor_result;
 
     TextView definitionView;
     TextView textView;
@@ -45,18 +51,20 @@ public class MainActivity extends AppCompatActivity {
     TextView defaultView;
     Button copyButton;
     Button calculateButton;
+    TextView divisorDefinition;
+    TextView numberInputText;
+    Button calculateDivisors;
 
     TextView fromView;
     TextView toView;
-    TextView denominatorResult;
+    TextView divisorResult;
 
     private String numbers;
     private int start = 2;
     private int end = 1000;
     ConstraintLayout primeLayout;
-    ConstraintLayout denominatorLayout;
+    ConstraintLayout divisorLayout;
     EditText numberInput;
-    Button calculateDenominators;
 
     /**
      * called when the activity is first created.
@@ -101,6 +109,13 @@ public class MainActivity extends AppCompatActivity {
                         language = getResources().getString(R.string.language);
                         copy = getResources().getString(R.string.copy);
                         toastClipboard = getResources().getString(R.string.toast_clipboard);
+
+                        calculate_divisors = getResources().getString(R.string.calculate_divisors);
+                        number_input_text = getResources().getString(R.string.enter_number);
+                        is_prime = getResources().getString(R.string.is_prime);
+                        is_not_prime = getResources().getString(R.string.is_not_prime);
+                        denominator_definition = getResources().getString(R.string.divisor_definition);
+                        divisor_result = getResources().getString(R.string.divisors_result);
                         break;
                     case 1:
                         Toast.makeText(MainActivity.this,
@@ -123,6 +138,13 @@ public class MainActivity extends AppCompatActivity {
                         language = getResources().getString(R.string.language_bxr);
                         copy = getResources().getString(R.string.copy_bxr);
                         toastClipboard = getResources().getString(R.string.toast_clipboard_bxr);
+
+                        calculate_divisors = getResources().getString(R.string.calculate_divisors_bxr);
+                        number_input_text = getResources().getString(R.string.enter_number_bxr);
+                        is_prime = getResources().getString(R.string.is_prime_bxr);
+                        is_not_prime = getResources().getString(R.string.is_not_prime_bxr);
+                        denominator_definition = getResources().getString(R.string.denominator_definition_bxr);
+                        divisor_result = getResources().getString(R.string.divisors_result_bxr);
                         break;
                     case 2:
                         Toast.makeText(MainActivity.this,
@@ -145,6 +167,13 @@ public class MainActivity extends AppCompatActivity {
                         language = getResources().getString(R.string.language_esp);
                         copy = getResources().getString(R.string.copy_esp);
                         toastClipboard = getResources().getString(R.string.toast_clipboard_esp);
+
+                        calculate_divisors = getResources().getString(R.string.calculate_divisors_esp);
+                        number_input_text = getResources().getString(R.string.enter_number_esp);
+                        is_prime = getResources().getString(R.string.is_prime_esp);
+                        is_not_prime = getResources().getString(R.string.is_not_prime_esp);
+                        denominator_definition = getResources().getString(R.string.divisor_definition_esp);
+                        divisor_result = getResources().getString(R.string.divisors_result_esp);
                         break;
                     case 3:
                         Toast.makeText(MainActivity.this,
@@ -167,6 +196,13 @@ public class MainActivity extends AppCompatActivity {
                         language = getResources().getString(R.string.language_et);
                         copy = getResources().getString(R.string.copy_et);
                         toastClipboard = getResources().getString(R.string.toast_clipboard_et);
+
+                        calculate_divisors = getResources().getString(R.string.calculate_divisors_et);
+                        number_input_text = getResources().getString(R.string.enter_number_et);
+                        is_prime = getResources().getString(R.string.is_prime_et);
+                        is_not_prime = getResources().getString(R.string.is_not_prime_et);
+                        denominator_definition = getResources().getString(R.string.divisor_definition_et);
+                        divisor_result = getResources().getString(R.string.divisors_result_et);
                         break;
                     case 4:
                         Toast.makeText(MainActivity.this,
@@ -189,6 +225,13 @@ public class MainActivity extends AppCompatActivity {
                         language = getResources().getString(R.string.language_kz);
                         copy = getResources().getString(R.string.copy_kz);
                         toastClipboard = getResources().getString(R.string.toast_clipboard_kz);
+
+                        calculate_divisors = getResources().getString(R.string.calculate_divisors_kz);
+                        number_input_text = getResources().getString(R.string.enter_number_kz);
+                        is_prime = getResources().getString(R.string.is_prime_kz);
+                        is_not_prime = getResources().getString(R.string.is_not_prime_kz);
+                        denominator_definition = getResources().getString(R.string.divisor_definition_kz);
+                        divisor_result = getResources().getString(R.string.divisors_result_kz);
                         break;
                     case 5:
                         Toast.makeText(MainActivity.this,
@@ -211,6 +254,13 @@ public class MainActivity extends AppCompatActivity {
                         language = getResources().getString(R.string.language_mm);
                         copy = getResources().getString(R.string.copy_mm);
                         toastClipboard = getResources().getString(R.string.toast_clipboard_mm);
+
+                        calculate_divisors = getResources().getString(R.string.calculate_divisors_mm);
+                        number_input_text = getResources().getString(R.string.enter_number_mm);
+                        is_prime = getResources().getString(R.string.is_prime_mm);
+                        is_not_prime = getResources().getString(R.string.is_not_prime_mm);
+                        denominator_definition = getResources().getString(R.string.divisor_definition_mm);
+                        divisor_result = getResources().getString(R.string.divisors_result_mm);
                         break;
                     case 6:
                         Toast.makeText(MainActivity.this,
@@ -233,6 +283,13 @@ public class MainActivity extends AppCompatActivity {
                         language = getResources().getString(R.string.language_ru);
                         copy = getResources().getString(R.string.copy_ru);
                         toastClipboard = getResources().getString(R.string.toast_clipboard_ru);
+
+                        calculate_divisors = getResources().getString(R.string.calculate_divisors_ru);
+                        number_input_text = getResources().getString(R.string.enter_number_ru);
+                        is_prime = getResources().getString(R.string.is_prime_ru);
+                        is_not_prime = getResources().getString(R.string.is_not_prime_ru);
+                        denominator_definition = getResources().getString(R.string.divisor_definition_ru);
+                        divisor_result = getResources().getString(R.string.divisors_result_ru);
                         break;
                     case 7:
                         Toast.makeText(MainActivity.this,
@@ -255,6 +312,13 @@ public class MainActivity extends AppCompatActivity {
                         language = getResources().getString(R.string.language_vn);
                         copy = getResources().getString(R.string.copy_vn);
                         toastClipboard = getResources().getString(R.string.toast_clipboard_vn);
+
+                        calculate_divisors = getResources().getString(R.string.calculate_divisors_vn);
+                        number_input_text = getResources().getString(R.string.enter_number_vn);
+                        is_prime = getResources().getString(R.string.is_prime_vn);
+                        is_not_prime = getResources().getString(R.string.is_not_prime_vn);
+                        denominator_definition = getResources().getString(R.string.divisor_definition_vn);
+                        divisor_result = getResources().getString(R.string.divisors_result_vn);
                         break;
                 }
                 // set views' text
@@ -311,42 +375,60 @@ public class MainActivity extends AppCompatActivity {
         result = findViewById(R.id.numbers);
         Log.d("BLOODY HELL", "ACTIVITY CREATED");
 
-        primeLayout = findViewById(R.id.prime_layout);
-        denominatorLayout = findViewById(R.id.denominator_layout);
         numberInput = findViewById(R.id.number_input);
-        calculateDenominators = findViewById(R.id.calculate_denominators);
-        denominatorResult = findViewById(R.id.denominator_result);
+        numberInputText = findViewById(R.id.number_input_text);
+        numberInputText.setText(number_input_text);
+        Log.d("NIT", "Text is " + number_input_text);
+        Log.d("NIT", numberInputText.getText().toString());
+        divisorResult = findViewById(R.id.divisor_result);
+        divisorResult.setText(divisor_result);
+        divisorDefinition = findViewById(R.id.divisor_definition);
+        divisorDefinition.setText(denominator_definition);
+        calculateDivisors = findViewById(R.id.calculate_divisors);
+        calculateDivisors.setText(calculate_divisors);
+
+        primeLayout = findViewById(R.id.prime_layout);
+        divisorLayout = findViewById(R.id.divisor_layout);
 
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnItemSelectedListener(item -> {
             if (item.getItemId() == R.id.nav_primes) {
                 primeLayout.setVisibility(View.VISIBLE);
-                denominatorLayout.setVisibility(View.GONE);
+                divisorLayout.setVisibility(View.GONE);
                 return true;
             }
             else if (item.getItemId() == R.id.nad_denominators) {
                 primeLayout.setVisibility(View.GONE);
-                denominatorLayout.setVisibility(View.VISIBLE);
+                divisorLayout.setVisibility(View.VISIBLE);
                 return true;
             }
             return false;
         });
 
-        calculateDenominators.setOnClickListener(v -> {
+        calculateDivisors.setOnClickListener(v -> {
             try {
                 int number = Integer.parseInt(numberInput.getText().toString());
-                if(number <= 0) throw new NumberFormatException();
+                if(number <= 0) {
+                    throw new NumberFormatException();
+                }
 
                 ArrayList<Integer> divisors = new ArrayList<>();
-                for(int i = 1; i <= number; i++) {
+                for(int i = 1; i <= number/2; i++) {
                     if(number % i == 0) divisors.add(i);
                 }
-
-                String resultText = found + " " + number + ":\n";
-                for (int divisor : divisors) {
-                    resultText += divisor + "\n";  // Add each divisor on a new line
+                
+                String resultText = "";
+                if(divisors.size() == 1) {
+                    resultText = number + " " + is_prime + "\n" + divisor_result + "\n";
                 }
-                denominatorResult.setText(resultText);
+                else {
+                    resultText = number + " " + is_not_prime + "\n" + divisor_result + "\n";
+                }
+                for (int divisor : divisors) {
+                    resultText += divisor + "\n";  // add each divisor on a new line
+                }
+                resultText += number;
+                divisorResult.setText(resultText);
             }
             catch (NumberFormatException e) {
                 Toast.makeText(this, negative_error, Toast.LENGTH_SHORT).show();
