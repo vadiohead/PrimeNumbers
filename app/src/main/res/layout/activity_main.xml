@@ -1,135 +1,236 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#dcdcdc"
     tools:context=".MainActivity">
 
+    <!-- Spinner -->
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <EditText
-        android:id="@+id/fromValue"
-        android:layout_width="162dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="10dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="2"
-        app:layout_constraintStart_toEndOf="@+id/from"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <EditText
-        android:id="@+id/toValue"
-        android:layout_width="162dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="10dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="1000"
-        app:layout_constraintStart_toEndOf="@+id/from"
-        app:layout_constraintTop_toBottomOf="@+id/fromValue" />
-
-    <TextView
-        android:id="@+id/definition"
-        android:layout_width="329dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="68dp"
-        android:text="@string/definition"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/definition" />
-
-    <TextView
-        android:id="@+id/from"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
-        android:text="@string/from"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/to"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
-        android:text="@string/to"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/from" />
-
-    <LinearLayout
-        android:id="@+id/buttonContainer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:orientation="vertical"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toValue">
-
-        <Button
-            android:id="@+id/calculate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/calculate"
-            android:onClick="calculate"/>
-
-        <Button
-            android:id="@+id/copy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/copy"
-            android:onClick="copyToClipboard"/>
-    </LinearLayout>
-
-
-    <ScrollView
+    <!-- Prime Layout (using ConstraintLayout instead of LinearLayout) -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/prime_layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/buttonContainer"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" >
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <!-- Definition TextView -->
+        <TextView
+            android:id="@+id/definition"
+            android:layout_width="329dp"
+            android:layout_height="67dp"
+            android:text="@string/definition"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- TextView 2 -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_marginStart="40dp"
+            android:text="@string/text"
+            app:layout_constraintTop_toBottomOf="@id/definition"
+            app:layout_constraintStart_toStartOf="parent"/>
 
-            <TextView
-                android:id="@+id/numbers"
+        <!-- From TextView -->
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/from"
+            app:layout_constraintTop_toBottomOf="@id/textView2"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- From Value EditText -->
+        <EditText
+            android:id="@+id/fromValue"
+            android:layout_width="162dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="2"
+            app:layout_constraintTop_toTopOf="@id/from"
+            app:layout_constraintStart_toEndOf="@id/from"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="-20dp"/>
+
+        <!-- To Value EditText -->
+        <EditText
+            android:id="@+id/toValue"
+            android:layout_width="162dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="1000"
+            app:layout_constraintTop_toBottomOf="@id/fromValue"
+            app:layout_constraintStart_toEndOf="@id/from"
+            android:layout_marginStart="21dp"/>
+
+        <!-- To TextView -->
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/to"
+            app:layout_constraintTop_toBottomOf="@id/from"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- Button Container (LinearLayout replaced with ConstraintLayout) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/buttonContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/toValue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5">
+
+            <!-- Calculate Button -->
+            <Button
+                android:id="@+id/calculate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="calculate"
+                android:text="@string/calculate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Copy Button -->
+            <Button
+                android:id="@+id/copy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="copyToClipboard"
+                android:text="@string/copy"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/calculate" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- ScrollView for results -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/buttonContainer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="monospace"
-                android:text="@string/display"
-                android:textColor="#228b22" />
-        </LinearLayout>
-    </ScrollView>
+                android:orientation="vertical">
+
+                <!-- Numbers TextView -->
+                <TextView
+                    android:id="@+id/numbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="@string/display"
+                    android:textColor="#228b22"/>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Denominator Layout (Visibility Gone initially) -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/denominator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navigation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Denominator Definition -->
+        <TextView
+            android:id="@+id/denominator_definition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/denominator_definition"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Number Input EditText -->
+        <EditText
+            android:id="@+id/number_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_number"
+            android:inputType="number"
+            android:ems="10"
+            app:layout_constraintTop_toBottomOf="@id/denominator_definition"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <!-- Calculate Denominators Button -->
+        <Button
+            android:id="@+id/calculate_denominators"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate_denominators"
+            app:layout_constraintTop_toBottomOf="@id/number_input"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- ScrollView for Denominator Results -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/calculate_denominators"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Numbers TextView -->
+                <TextView
+                    android:id="@+id/denominator_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:text="@string/display"
+                    android:textColor="#228b22"/>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/navigation_menu"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

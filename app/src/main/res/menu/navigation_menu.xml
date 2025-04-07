@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_primes"
+        android:title="@string/primes"
+        android:icon="@drawable/ic_launcher_background" />
+    <item
+        android:id="@+id/nad_denominators"
+        android:title="@string/denominators"
+        android:icon="@drawable/ic_launcher_foreground" />
+</menu>

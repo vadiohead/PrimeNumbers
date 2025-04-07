@@ -7,6 +7,7 @@
 package com.example.primenumbers;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.ClipData;
 import android.content.ClipboardManager;
@@ -15,6 +16,9 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.*;
 import android.widget.*;
+
+import java.util.ArrayList;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,9 +48,15 @@ public class MainActivity extends AppCompatActivity {
 
     TextView fromView;
     TextView toView;
-    String numbers;
-    int start = 2;
-    int end = 1000;
+    TextView denominatorResult;
+
+    private String numbers;
+    private int start = 2;
+    private int end = 1000;
+    ConstraintLayout primeLayout;
+    ConstraintLayout denominatorLayout;
+    EditText numberInput;
+    Button calculateDenominators;
 
     /**
      * called when the activity is first created.
@@ -281,9 +291,9 @@ public class MainActivity extends AppCompatActivity {
         textView = findViewById(R.id.textView2);
         textView.setText(text);
 
-        startView = findViewById(R.id.from);
+        startView = findViewById(R.id.fromValue);
         startView.setText(from);
-        endView = findViewById(R.id.to);
+        endView = findViewById(R.id.toValue);
         endView.setText(to);
 
         copyButton = findViewById(R.id.copy);
@@ -300,6 +310,49 @@ public class MainActivity extends AppCompatActivity {
         toView = findViewById(R.id.toValue);
         result = findViewById(R.id.numbers);
         Log.d("BLOODY HELL", "ACTIVITY CREATED");
+
+        primeLayout = findViewById(R.id.prime_layout);
+        denominatorLayout = findViewById(R.id.denominator_layout);
+        numberInput = findViewById(R.id.number_input);
+        calculateDenominators = findViewById(R.id.calculate_denominators);
+        denominatorResult = findViewById(R.id.denominator_result);
+
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
+        bottomNav.setOnItemSelectedListener(item -> {
+            if (item.getItemId() == R.id.nav_primes) {
+                primeLayout.setVisibility(View.VISIBLE);
+                denominatorLayout.setVisibility(View.GONE);
+                return true;
+            }
+            else if (item.getItemId() == R.id.nad_denominators) {
+                primeLayout.setVisibility(View.GONE);
+                denominatorLayout.setVisibility(View.VISIBLE);
+                return true;
+            }
+            return false;
+        });
+
+        calculateDenominators.setOnClickListener(v -> {
+            try {
+                int number = Integer.parseInt(numberInput.getText().toString());
+                if(number <= 0) throw new NumberFormatException();
+
+                ArrayList<Integer> divisors = new ArrayList<>();
+                for(int i = 1; i <= number; i++) {
+                    if(number % i == 0) divisors.add(i);
+                }
+
+                String resultText = found + " " + number + ":\n";
+                for (int divisor : divisors) {
+                    resultText += divisor + "\n";  // Add each divisor on a new line
+                }
+                denominatorResult.setText(resultText);
+            }
+            catch (NumberFormatException e) {
+                Toast.makeText(this, negative_error, Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     /**

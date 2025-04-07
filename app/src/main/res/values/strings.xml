@@ -13,6 +13,8 @@
     -->
 
     <!-- english -->
+    <string name="primes">Find primes in range</string>
+    <string name="denominators">Find denominators</string>
     <string name="language">English</string>
     <string name="toast">Language set to English</string>
     <string name="definition">A prime number is a number
@@ -31,6 +33,10 @@
     <string name="found">Prime numbers found in range <!--"10 - 1000"--></string>
     <string name="copy">Copy to clipboard</string>
     <string name="toast_clipboard">Copied to clipboard</string>
+    <string name="denominator_definition">A denominator is a number that divides another number evenly.</string>
+    <string name="enter_number">Enter the number:</string>
+    <string name="calculate_denominators">Calculate denominators</string>
+    <string name="denominator_result">Denominators:</string>
 
     <!-- buryad -->
     <string name="language_bxr">Буряад</string>
