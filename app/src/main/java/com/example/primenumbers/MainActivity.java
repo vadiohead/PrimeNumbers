@@ -325,10 +325,17 @@ public class MainActivity extends AppCompatActivity {
                 definitionView.setText(definition);
                 defaultView.setText(defaultString);
                 textView.setText(text);
-                startView.setText(from);
-                endView.setText(to);
+                fromView.setText(from);
+                toView.setText(to);
+                startView.setText("2");
+                endView.setText("1000");
                 copyButton.setText(copy);
                 calculateButton.setText(calculate);
+
+                calculateDivisors.setText(calculate_divisors);
+                divisorDefinition.setText(denominator_definition);
+                divisorResult.setText(divisor_result);
+                numberInputText.setText(number_input_text);
                 Log.d("BLOODY HELL", "LANGUAGE CHANGING PROCESS FINISHED");
             }
 
@@ -353,39 +360,25 @@ public class MainActivity extends AppCompatActivity {
 
         // initialise views
         textView = findViewById(R.id.textView2);
-        textView.setText(text);
-
         startView = findViewById(R.id.fromValue);
-        startView.setText(from);
         endView = findViewById(R.id.toValue);
-        endView.setText(to);
 
         copyButton = findViewById(R.id.copy);
-        copyButton.setText(copy);
         calculateButton = findViewById(R.id.calculate);
-        calculateButton.setText(calculate);
 
         definitionView = findViewById(R.id.definition);
-        definitionView.setText(definition);
         defaultView = findViewById(R.id.numbers);
-        defaultView.setText(defaultString);
 
-        fromView = findViewById(R.id.fromValue);
-        toView = findViewById(R.id.toValue);
+        fromView = findViewById(R.id.from);
+        toView = findViewById(R.id.to);
         result = findViewById(R.id.numbers);
         Log.d("BLOODY HELL", "ACTIVITY CREATED");
 
         numberInput = findViewById(R.id.number_input);
         numberInputText = findViewById(R.id.number_input_text);
-        numberInputText.setText(number_input_text);
-        Log.d("NIT", "Text is " + number_input_text);
-        Log.d("NIT", numberInputText.getText().toString());
         divisorResult = findViewById(R.id.divisor_result);
-        divisorResult.setText(divisor_result);
         divisorDefinition = findViewById(R.id.divisor_definition);
-        divisorDefinition.setText(denominator_definition);
         calculateDivisors = findViewById(R.id.calculate_divisors);
-        calculateDivisors.setText(calculate_divisors);
 
         primeLayout = findViewById(R.id.prime_layout);
         divisorLayout = findViewById(R.id.divisor_layout);
