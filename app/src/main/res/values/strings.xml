@@ -13,8 +13,6 @@
     -->
 
     <!-- english -->
-    <string name="primes">Find primes in range</string>
-    <string name="denominators">Find denominators</string>
     <string name="language">English</string>
     <string name="toast">Language set to English</string>
     <string name="definition">A prime number is a number
@@ -39,6 +37,8 @@
     <string name="is_prime"> is a prime number</string>
     <string name="is_not_prime"> is not a prime number</string>
     <string name="divisors_result">Found divisors:</string>
+    <string name="primes">Find prime numbers</string>
+    <string name="divisors">Find divisors</string>
 
     <!-- buryad -->
     <string name="language_bxr">Буряад</string>
@@ -63,6 +63,8 @@
     <string name="is_prime_bxr"> юрын тоо байна</string>
     <string name="is_not_prime_bxr"> юрын тоо бэшэ</string>
     <string name="divisors_result_bxr">Хубаагшадые олоһон байна:</string>
+    <string name="primes_bxr">Юрын тоонуудые бэдэрхэ</string>
+    <string name="divisors_bxr">Хубаагшануудые бэдэрхэ</string>
 
     <!-- spanish -->
     <string name="language_esp">Español</string>
@@ -89,6 +91,8 @@
     <string name="is_prime_esp"> es un número primo</string>
     <string name="is_not_prime_esp"> no es un número primo</string>
     <string name="divisors_result_esp">Divisores encontrados:</string>
+    <string name="primes_esp">Encontrar números primos</string>
+    <string name="divisors_esp">Encontrar divisores</string>
 
     <!-- amharic -->
     <string name="language_et">አማርኛ</string>
@@ -114,6 +118,8 @@
     <string name="is_prime_et"> ይህ የተመረጡ ቁጥር ነው</string>
     <string name="is_not_prime_et"> ይህ የተመረጡ ቁጥር አይደለም</string>
     <string name="divisors_result_et">የተገኙ አንደኛ ቁጥሮች:</string>
+    <string name="primes_et">ቅድሚ ቁጥሮችን አስተውሉ</string>
+    <string name="divisors_et">ክፍተቶችን አስተውሉ</string>
 
     <!-- kazakh -->
     <string name="language_kz">Қазақша</string>
@@ -139,6 +145,8 @@
     <string name="is_prime_kz"> бұл жай сан</string>
     <string name="is_not_prime_kz"> бұл жай сан емес</string>
     <string name="divisors_result_kz">Табылған бөлгіштер:</string>
+    <string name="primes_kz">Бастапқы сандарды табу</string>
+    <string name="divisors_kz">Бөлгіштерді табу</string>
 
     <!-- burmese -->
     <string name="language_mm">မြန်မာ</string>
@@ -164,6 +172,8 @@
     <string name="is_prime_mm"> ဤသည်မှာပုဂ္ဂိုလ်ဆန်းအရေအတွက်ဖြစ်သည်</string>
     <string name="is_not_prime_mm"> ဤသည်မှာပုဂ္ဂိုလ်ဆန်းအရေအတွက်မဟုတ်ပါ</string>
     <string name="divisors_result_mm">တွေ့ရှိသောခွဲခြားသူများ:</string>
+    <string name="primes_mm">ပိုင်ဆိုင်သည့်အရေအတွက်များကိုရှာပါ</string>
+    <string name="divisors_mm">ခွဲမည့်အမှတ်များကိုရှာပါ</string>
 
     <!-- russian -->
     <string name="language_ru">Русский</string>
@@ -190,6 +200,8 @@
     <string name="is_prime_ru"> - простое число</string>
     <string name="is_not_prime_ru"> - не простое число</string>
     <string name="divisors_result_ru">Найденные делители:</string>
+    <string name="primes_ru">Найти простые числа</string>
+    <string name="divisors_ru">Найти делители</string>
 
     <!-- Vietnamese -->
     <string name="language_vn">Tiếng Việt</string>
@@ -215,5 +227,7 @@
     <string name="is_prime_vn"> là một số nguyên tố</string>
     <string name="is_not_prime_vn"> không phải là một số nguyên tố</string>
     <string name="divisors_result_vn">Các số chia được tìm thấy:</string>
+    <string name="primes_vn">Tìm các số nguyên tố</string>
+    <string name="divisors_vn">Tìm các số chia</string>
 
 </resources>
