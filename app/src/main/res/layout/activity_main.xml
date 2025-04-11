@@ -48,12 +48,13 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:menu="@menu/navigation_menu"
+        android:visibility="visible"
         app:itemIconTint="@color/nav_item_color"
-        app:itemTextColor="@color/nav_item_color" />
+        app:itemTextColor="@color/nav_item_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/navigation_menu" />
 
     <!-- Guideline to split screen in half -->
     <androidx.constraintlayout.widget.Guideline
@@ -61,7 +62,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.45" />
+        app:layout_constraintGuide_percent="0.5" />
 
     <!-- Button Container (LinearLayout replaced with ConstraintLayout) -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -164,7 +165,6 @@
             android:layout_marginTop="-20dp"
             android:ems="10"
             android:inputType="number"
-            android:text="2"
             app:layout_constraintStart_toEndOf="@id/from"
             app:layout_constraintTop_toTopOf="@id/from" />
 
@@ -177,7 +177,6 @@
             android:layout_marginTop="3dp"
             android:ems="10"
             android:inputType="number"
-            android:text="1000"
             app:layout_constraintStart_toEndOf="@id/from"
             app:layout_constraintTop_toBottomOf="@id/fromValue" />
 

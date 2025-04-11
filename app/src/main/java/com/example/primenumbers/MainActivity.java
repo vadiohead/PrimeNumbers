@@ -59,9 +59,9 @@ public class MainActivity extends AppCompatActivity {
     TextView fromView;
     TextView toView;
 
-    private String numbers;
-    private int start = 2;
-    private int end = 1000;
+    protected String numbers;
+    protected int start = 2;
+    protected int end = 1000;
     BottomNavigationView bottomNav;
     MenuItem prime;
     MenuItem divis;
@@ -353,13 +353,13 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("PHO QUINN HAIL", "Default view CHANGING PROCESS FINISHED");
                 textView.setText(text);
                 Log.d("PHO QUINN HAIL", "Text view CHANGING PROCESS FINISHED");
-                fromView.setText(from);
+                startView.setText(from);
                 Log.d("PHO QUINN HAIL", "From view CHANGING PROCESS FINISHED");
-                toView.setText(to);
+                endView.setText(to);
                 Log.d("PHO QUINN HAIL", "To view CHANGING PROCESS FINISHED");
-                startView.setText("2");
+                fromView.setText("2");
                 Log.d("PHO QUINN HAIL", "Start view CHANGING PROCESS FINISHED");
-                endView.setText("1000");
+                toView.setText("1000");
                 Log.d("PHO QUINN HAIL", "End view CHANGING PROCESS FINISHED");
                 copyButton.setText(copy);
                 Log.d("PHO QUINN HAIL", "Copy button view CHANGING PROCESS FINISHED");
@@ -399,8 +399,8 @@ public class MainActivity extends AppCompatActivity {
         divis = bottomNav.getMenu().getItem(1);
 
         textView = findViewById(R.id.textView2);
-        startView = findViewById(R.id.fromValue);
-        endView = findViewById(R.id.toValue);
+        startView = findViewById(R.id.from);
+        endView = findViewById(R.id.to);
 
         copyButton = findViewById(R.id.copy);
         calculateButton = findViewById(R.id.calculate);
@@ -408,8 +408,8 @@ public class MainActivity extends AppCompatActivity {
         definitionView = findViewById(R.id.definition);
         defaultView = findViewById(R.id.numbers);
 
-        fromView = findViewById(R.id.from);
-        toView = findViewById(R.id.to);
+        fromView = findViewById(R.id.fromValue);
+        toView = findViewById(R.id.toValue);
         result = findViewById(R.id.numbers);
 
         numberInput = findViewById(R.id.number_input);
@@ -480,7 +480,9 @@ public class MainActivity extends AppCompatActivity {
         }
         try {
             start = Integer.parseInt(fromText);
+            Log.d("PRIME", "START is" + start);
             end = Integer.parseInt(toText);
+            Log.d("PRIME", "END is" + end);
         }
         catch (NumberFormatException e) {
             result.setText("Invalid input. Please enter numeric values.");
