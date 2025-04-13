@@ -2,10 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_primes"
-        android:icon="@drawable/ic_launcher_background"
+        android:icon="@drawable/find_primes_no_bg"
         android:title="@string/primes" />
     <item
         android:id="@+id/nad_divisors"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/find_divisors_no_bg"
         android:title="@string/divisors" />
 </menu>

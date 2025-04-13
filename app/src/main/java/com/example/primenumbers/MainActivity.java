@@ -2,7 +2,7 @@
  * small application for convenient search of prime numbers
  *
  * @author clyde
- * @version 1.0
+ * @version 1.1
  */
 package com.example.primenumbers;
 
@@ -59,15 +59,15 @@ public class MainActivity extends AppCompatActivity {
     TextView fromView;
     TextView toView;
 
-    protected String numbers;
-    protected int start = 2;
-    protected int end = 1000;
+    private String numbers;
+    private int start = 2;
+    private int end = 1000;
     BottomNavigationView bottomNav;
     MenuItem prime;
     MenuItem divis;
     ConstraintLayout primeLayout;
     ConstraintLayout divisorLayout;
-    int currentLayout = 0; // 0 - primeLayout, 1 - divisorLayout
+    private byte currentLayout = 0; // 0 - primeLayout, 1 - divisorLayout
     EditText numberInput;
 
     /**
@@ -357,9 +357,9 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("PHO QUINN HAIL", "From view CHANGING PROCESS FINISHED");
                 endView.setText(to);
                 Log.d("PHO QUINN HAIL", "To view CHANGING PROCESS FINISHED");
-                fromView.setText("2");
+                fromView.setText(String.valueOf(start));
                 Log.d("PHO QUINN HAIL", "Start view CHANGING PROCESS FINISHED");
-                toView.setText("1000");
+                toView.setText(String.valueOf(end));
                 Log.d("PHO QUINN HAIL", "End view CHANGING PROCESS FINISHED");
                 copyButton.setText(copy);
                 Log.d("PHO QUINN HAIL", "Copy button view CHANGING PROCESS FINISHED");
