@@ -3,7 +3,7 @@
  * used in MainActivity to display flags of languages
  *
  * @author clyde
- * @version 1.1igti
+ * @version 1.1
  */
 package com.example.primenumbers;
 

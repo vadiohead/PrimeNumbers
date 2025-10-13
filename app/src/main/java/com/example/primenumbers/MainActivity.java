@@ -394,7 +394,7 @@ public class MainActivity extends AppCompatActivity {
         spinner.setAdapter(adapter);
 
         // initialise views
-        bottomNav = findViewById(R.id.bottom_navigation);
+        bottomNav = findViewById(R.id.navigation);
         prime = bottomNav.getMenu().getItem(0);
         divis = bottomNav.getMenu().getItem(1);
 
@@ -419,7 +419,7 @@ public class MainActivity extends AppCompatActivity {
         primeLayout = findViewById(R.id.prime_layout);
         divisorLayout = findViewById(R.id.divisor_layout);
 
-        bottomNav = findViewById(R.id.bottom_navigation);
+        bottomNav = findViewById(R.id.navigation);
         bottomNav.setOnItemSelectedListener(item -> {
             if (item.getItemId() == R.id.nav_primes) {
                 currentLayout = 0;
