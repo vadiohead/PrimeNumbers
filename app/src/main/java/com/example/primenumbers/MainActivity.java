@@ -218,34 +218,34 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 4:
                         Toast.makeText(MainActivity.this,
-                                getResources().getString(R.string.toast_kz), Toast.LENGTH_SHORT).show();
-                        definition = getResources().getString(R.string.definition_kz);
-                        defaultString = getResources().getString(R.string.display_kz);
+                                getResources().getString(R.string.toast_kg), Toast.LENGTH_SHORT).show();
+                        definition = getResources().getString(R.string.definition_kg);
+                        defaultString = getResources().getString(R.string.display_kg);
 
-                        not_found = getResources().getString(R.string.not_found_kz);
-                        found = getResources().getString(R.string.found_kz);
+                        not_found = getResources().getString(R.string.not_found_kg);
+                        found = getResources().getString(R.string.found_kg);
 
-                        range_error = getResources().getString(R.string.range_error_kz);
-                        negative_error = getResources().getString(R.string.negative_error_kz);
+                        range_error = getResources().getString(R.string.range_error_kg);
+                        negative_error = getResources().getString(R.string.negative_error_kg);
 
-                        text = getResources().getString(R.string.text_kz);
-                        from = getResources().getString(R.string.from_kz);
-                        to = getResources().getString(R.string.to_kz);
+                        text = getResources().getString(R.string.text_kg);
+                        from = getResources().getString(R.string.from_kg);
+                        to = getResources().getString(R.string.to_kg);
 
-                        output = getResources().getString(R.string.output_kz);
-                        calculate = getResources().getString(R.string.calculate_kz);
-                        language = getResources().getString(R.string.language_kz);
-                        copy = getResources().getString(R.string.copy_kz);
-                        toastClipboard = getResources().getString(R.string.toast_clipboard_kz);
+                        output = getResources().getString(R.string.output_kg);
+                        calculate = getResources().getString(R.string.calculate_kg);
+                        language = getResources().getString(R.string.language_kg);
+                        copy = getResources().getString(R.string.copy_kg);
+                        toastClipboard = getResources().getString(R.string.toast_clipboard_kg);
 
-                        calculate_divisors = getResources().getString(R.string.calculate_divisors_kz);
-                        number_input_text = getResources().getString(R.string.enter_number_kz);
-                        is_prime = getResources().getString(R.string.is_prime_kz);
-                        is_not_prime = getResources().getString(R.string.is_not_prime_kz);
-                        divisor_definition = getResources().getString(R.string.divisor_definition_kz);
-                        divisor_result = getResources().getString(R.string.divisors_result_kz);
-                        findPrimes = getResources().getString(R.string.primes_kz);
-                        findDivisors = getResources().getString(R.string.divisors_kz);
+                        calculate_divisors = getResources().getString(R.string.calculate_divisors_kg);
+                        number_input_text = getResources().getString(R.string.enter_number_kg);
+                        is_prime = getResources().getString(R.string.is_prime_kg);
+                        is_not_prime = getResources().getString(R.string.is_not_prime_kg);
+                        divisor_definition = getResources().getString(R.string.divisor_definition_kg);
+                        divisor_result = getResources().getString(R.string.divisors_result_kg);
+                        findPrimes = getResources().getString(R.string.primes_kg);
+                        findDivisors = getResources().getString(R.string.divisors_kg);
                         break;
                     case 5:
                         Toast.makeText(MainActivity.this,
@@ -383,12 +383,12 @@ public class MainActivity extends AppCompatActivity {
                                 getResources().getString(R.string.language_bxr),
                                 getResources().getString(R.string.language_esp),
                                 getResources().getString(R.string.language_et),
-                                getResources().getString(R.string.language_kz),
+                                getResources().getString(R.string.language_kg),
                                 getResources().getString(R.string.language_mm),
                                 getResources().getString(R.string.language_ru),
                                 getResources().getString(R.string.language_vn)};
         int[] icons = {R.drawable.english, R.drawable.buryat, R.drawable.spanish, R.drawable.amharic,
-                R.drawable.kazakh, R.drawable.burmese, R.drawable.russian, R.drawable.vietnamese};
+            R.drawable.kyrgyz, R.drawable.burmese, R.drawable.russian, R.drawable.vietnamese};
 
         SpinnerIcons adapter = new SpinnerIcons(this, languages, icons); // call spinner with icons
         spinner.setAdapter(adapter);

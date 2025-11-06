@@ -121,32 +121,31 @@
     <string name="primes_et">ቅድሚ ቁጥሮችን አስተውሉ</string>
     <string name="divisors_et">ክፍተቶችን አስተውሉ</string>
 
-    <!-- kazakh -->
-    <string name="language_kz">Қазақша</string>
-    <string name="toast_kz">Тіл қазақ тіліне өзгертілді</string>
-    <string name="definition_kz">Жай сан – бұл тек 1-ге және өзіне ғана бөлінетін,
-                            1-ден үлкен сан</string>
-    <string name="range_error_kz">Бастапқы позиция аяқталу позициясынан
-                            кіші болмауы керек</string>
-    <string name="negative_error_kz">Бастапқы позиция оң сан болуы керек</string>
-    <string name="text_kz">Ауқымды анықтаңыз:</string>
-    <string name="from_kz">Бастау</string>
-    <string name="to_kz">Аяқтау</string>
-    <string name="output_kz">Шығару</string>
-    <string name="calculate_kz">Жай сандарды есептеу</string>
-    <string name="display_kz">Сандар осында көрсетіледі</string>
-    <string name="not_found_kz">Берілген диапазонда жай сандар табылған жоқ: </string>
-    <string name="found_kz">Диапазонда табылған жай сандар <!--"10 - 1000"--></string>
-    <string name="copy_kz">Буферге көшіру</string>
-    <string name="toast_clipboard_kz">Буферге көшірілді</string>
-    <string name="divisor_definition_kz">Бөлгіш - бұл басқа санды дәл бөлетін сан</string>
-    <string name="enter_number_kz">Санды енгізіңіз:</string>
-    <string name="calculate_divisors_kz">Бөлгіштерді есептеу</string>
-    <string name="is_prime_kz"> бұл жай сан</string>
-    <string name="is_not_prime_kz"> бұл жай сан емес</string>
-    <string name="divisors_result_kz">Табылған бөлгіштер:</string>
-    <string name="primes_kz">Бастапқы сандарды табу</string>
-    <string name="divisors_kz">Бөлгіштерді табу</string>
+    <!-- kyrgyz -->
+    <string name="language_kg">Кыргызча</string>
+    <string name="toast_kg">Тил кыргызчага өзгөртүлдү</string>
+    <string name="definition_kg">Жөнөкөй сан – бул 1ге жана өзүнө гана бөлүнгөн, 1ден чоң сан</string>
+    <string name="range_error_kg">Баштапкы позиция аяктоо позициясынан кичине болбошу керек</string>
+    <string name="negative_error_kg">Баштапкы позиция оң сан болушу керек</string>
+    <string name="text_kg">Аралыкты аныктаңыз:</string>
+    <string name="from_kg">Баштоо</string>
+    <string name="to_kg">Аяктоо</string>
+    <string name="output_kg">Натыйжа</string>
+    <string name="calculate_kg">Жөнөкөй сандарды эсептөө</string>
+    <string name="display_kg">Сандар бул жерде көрсөтүлөт</string>
+    <string name="not_found_kg">Берилген диапазондо жөнөкөй сандар табылган жок: </string>
+    <string name="found_kg">Диапазондо табылган жөнөкөй сандар <!--"10 - 1000"--></string>
+    <string name="copy_kg">Буферге көчүрүү</string>
+    <string name="toast_clipboard_kg">Буферге көчүрүлдү</string>
+    <string name="divisor_definition_kg">Бөлгүч – бул башка санды так бөлгөн сан</string>
+    <string name="enter_number_kg">Санды киргизиңиз:</string>
+    <string name="calculate_divisors_kg">Бөлгүчтөрдү эсептөө</string>
+    <string name="is_prime_kg"> бул жөнөкөй сан</string>
+    <string name="is_not_prime_kg"> бул жөнөкөй сан эмес</string>
+    <string name="divisors_result_kg">Табылган бөлгүчтөр:</string>
+    <string name="primes_kg">Баштапкы сандарды табуу</string>
+    <string name="divisors_kg">Бөлгүчтөрдү табуу</string>
+
 
     <!-- burmese -->
     <string name="language_mm">မြန်မာ</string>
