@@ -10,6 +10,7 @@
             5. burmese
             6. russian
             7. vietnamese
+            8. ukrainian
     -->
 
     <!-- english -->
@@ -202,7 +203,7 @@
     <string name="primes_ru">Найти простые числа</string>
     <string name="divisors_ru">Найти делители</string>
 
-    <!-- Vietnamese -->
+    <!-- vietnamese -->
     <string name="language_vn">Tiếng Việt</string>
     <string name="toast_vn">Đã thay đổi ngôn ngữ thành Tiếng Việt</string>
     <string name="definition_vn">Số nguyên tố là số lớn hơn 1
@@ -228,5 +229,30 @@
     <string name="divisors_result_vn">Các số chia được tìm thấy:</string>
     <string name="primes_vn">Tìm các số nguyên tố</string>
     <string name="divisors_vn">Tìm các số chia</string>
+
+    <!-- ukrainian -->
+    <string name="language_ua">Українська</string>
+    <string name="toast_ua">Мову змінено на українську</string>
+    <string name="definition_ua">Просте число — це число, більше за 1, яке ділиться тільки на 1 і на самого себе</string>
+    <string name="range_error_ua">Початкова позиція не може бути меншою за кінцеву</string>
+    <string name="negative_error_ua">Початкова позиція має бути додатним числом</string>
+    <string name="text_ua">Визначте діапазон:</string>
+    <string name="from_ua">Початок</string>
+    <string name="to_ua">Кінець</string>
+    <string name="output_ua">Результат</string>
+    <string name="calculate_ua">Обчислити прості числа</string>
+    <string name="display_ua">Числа будуть відображені тут</string>
+    <string name="not_found_ua">Простих чисел у заданому діапазоні не знайдено: </string>
+    <string name="found_ua">Знайдено прості числа в діапазоні <!--"10 - 1000"--></string>
+    <string name="copy_ua">Копіювати в буфер обміну</string>
+    <string name="toast_clipboard_ua">Скопійовано в буфер обміну</string>
+    <string name="divisor_definition_ua">Число, яке ділить інше число без остачі</string>
+    <string name="enter_number_ua">Введіть число:</string>
+    <string name="calculate_divisors_ua">Обчислити дільники</string>
+    <string name="is_prime_ua"> — просте число</string>
+    <string name="is_not_prime_ua"> — не є простим числом</string>
+    <string name="divisors_result_ua">Знайдені дільники:</string>
+    <string name="primes_ua">Знайти прості числа</string>
+    <string name="divisors_ua">Знайти дільники</string>
 
 </resources>

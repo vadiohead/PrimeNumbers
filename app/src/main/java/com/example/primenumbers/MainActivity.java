@@ -2,7 +2,7 @@
  * small application for convenient search of prime numbers
  *
  * @author clyde
- * @version 1.1
+ * @version 2.02
  */
 package com.example.primenumbers;
 
@@ -340,6 +340,37 @@ public class MainActivity extends AppCompatActivity {
                         findPrimes = getResources().getString(R.string.primes_vn);
                         findDivisors = getResources().getString(R.string.divisors_vn);
                         break;
+                    case 8:
+                        Toast.makeText(MainActivity.this,
+                                getResources().getString(R.string.toast_ua), Toast.LENGTH_SHORT).show();
+                        definition = getResources().getString(R.string.definition_ua);
+                        defaultString = getResources().getString(R.string.display_ua);
+
+                        not_found = getResources().getString(R.string.not_found_ua);
+                        found = getResources().getString(R.string.found_ua);
+
+                        range_error = getResources().getString(R.string.range_error_ua);
+                        negative_error = getResources().getString(R.string.negative_error_ua);
+
+                        text = getResources().getString(R.string.text_ua);
+                        from = getResources().getString(R.string.from_ua);
+                        to = getResources().getString(R.string.to_ua);
+
+                        output = getResources().getString(R.string.output_ua);
+                        calculate = getResources().getString(R.string.calculate_ua);
+                        language = getResources().getString(R.string.language_ua);
+                        copy = getResources().getString(R.string.copy_ua);
+                        toastClipboard = getResources().getString(R.string.toast_clipboard_ua);
+
+                        calculate_divisors = getResources().getString(R.string.calculate_divisors_ua);
+                        number_input_text = getResources().getString(R.string.enter_number_ua);
+                        is_prime = getResources().getString(R.string.is_prime_ua);
+                        is_not_prime = getResources().getString(R.string.is_not_prime_ua);
+                        divisor_definition = getResources().getString(R.string.divisor_definition_ua);
+                        divisor_result = getResources().getString(R.string.divisors_result_ua);
+                        findPrimes = getResources().getString(R.string.primes_ua);
+                        findDivisors = getResources().getString(R.string.divisors_ua);
+                        break;
                 }
                 // set views' texts
                 Log.d("PHO QUINN HAIL", "LANGUAGE CHANGING PROCESS INITIATED");
@@ -386,9 +417,10 @@ public class MainActivity extends AppCompatActivity {
                                 getResources().getString(R.string.language_kg),
                                 getResources().getString(R.string.language_mm),
                                 getResources().getString(R.string.language_ru),
-                                getResources().getString(R.string.language_vn)};
-        int[] icons = {R.drawable.english, R.drawable.buryat, R.drawable.spanish, R.drawable.amharic,
-            R.drawable.kyrgyz, R.drawable.burmese, R.drawable.russian, R.drawable.vietnamese};
+                                getResources().getString(R.string.language_vn),
+                                getResources().getString(R.string.language_ua)};
+        int[] icons = {R.drawable.united_kingdom, R.drawable.buryad_ulas, R.drawable.spain, R.drawable.ethiopia,
+            R.drawable.kyrgyzstan, R.drawable.myanmar, R.drawable.russia, R.drawable.vietnam, R.drawable.ukraine};
 
         SpinnerIcons adapter = new SpinnerIcons(this, languages, icons); // call spinner with icons
         spinner.setAdapter(adapter);
