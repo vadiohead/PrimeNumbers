@@ -4,6 +4,3 @@ Android 7.1.1 болон шэнэ түхеэрэлгэнүүдтэ Android Studi
 
 ### 🇬🇧 English
 Built on Android Studio Meerkat for Android 7.1.1 devices and newer. Available in 7 languages. Check "Releases" section for downloadable APK file and source code.
-
-### 🇰🇬 Кыргызча
-Android 7.1.1 жана андан жаңыраак түзмөктөр үчүн Android Studio Meerkat'та курулган. 7 тилде жеткиликтүү. Жүктөлүп алынуучу APK файлын жана баштапкы кодун "Чыгаруулар" бөлүмүн текшериңиз.
