@@ -2,7 +2,7 @@
  * small application for convenient search of prime numbers
  *
  * @author clyde
- * @version 2.02
+ * @version 2.01
  */
 package com.example.primenumbers;
 
